@@ -65,7 +65,7 @@ main(int argc, char *argv[])
 				ibuf[n] = '\0';
 				s = base64_encode2(ibuf);
 				if (s == NULL)
-					return 1;
+					continue;
 				puts(s);
 			} else {
 				perror("Read from file is failed");
@@ -80,7 +80,7 @@ main(int argc, char *argv[])
 				*s = '\0';
 			s = base64_encode2(ibuf);
 			if (s == NULL)
-				return 1;
+				continue;
 			puts(s);
 			free(s);
 		}

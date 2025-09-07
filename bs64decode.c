@@ -66,7 +66,7 @@ main(int argc, char *argv[])
 				ibuf[n] = '\0';
 				s = base64_decode2(ibuf);
 				if (s == NULL)
-					return 1;
+					continue;
 				puts(s);
 				free(s);
 			} else {
@@ -81,7 +81,7 @@ main(int argc, char *argv[])
 				*s = '\0';
 			s = base64_decode2(ibuf);
 			if (s == NULL)
-				return 1;
+				continue;
 			puts(s);
 			free(s);
 		}
