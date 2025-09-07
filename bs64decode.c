@@ -8,7 +8,6 @@
 
 enum { obuf_size = 64, ibuf_size = (obuf_size + 2) / 3 * 4 + 1 };
 
-/*
 int
 main(int argc, char *argv[])
 {
@@ -45,8 +44,7 @@ main(int argc, char *argv[])
 	}
 	return 0;
 }
-*/
-
+/*
 int
 main(int argc, char *argv[])
 {
@@ -88,3 +86,4 @@ main(int argc, char *argv[])
 	}
 	return 0;
 }
+*/
